@@ -10,6 +10,7 @@ before_script:
   # - ./scripts/setup-github-access.sh
 
 script:
+  - npm run test
   - ng build --prod
 
 after_success:
