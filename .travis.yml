@@ -8,7 +8,7 @@ dist: trusty
 branches:
   only:
     - master
-    
+
 before_script:
   - npm install -g angular-cli
   # - ./scripts/setup-github-access.sh
@@ -19,7 +19,8 @@ script:
 
 after_success:
   # - ./scripts/remove-branch.sh
-  -sudo ./scripts/.travis-deploy.sh
+  - chmod ugo+x scripts/.travis-deploy.sh
+  - ./scripts/.travis-deploy.sh
 
 notifications:
   email:
