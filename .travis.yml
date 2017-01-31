@@ -4,9 +4,8 @@ node_js:
 branches:
   only:
     - master
-
+sudo: required
 before_script:
-  - chmod +x bash
   - npm install -g angular-cli
   # - ./scripts/setup-github-access.sh
 
@@ -16,7 +15,7 @@ script:
 
 after_success:
   # - ./scripts/remove-branch.sh
-  - bash ./scripts/.travis-deploy.sh
+  -sudo ./scripts/.travis-deploy.sh
 
 notifications:
   email:
