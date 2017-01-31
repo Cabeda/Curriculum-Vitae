@@ -15,7 +15,7 @@ script:
 
 after_success:
   # - ./scripts/remove-branch.sh
-  - npm run deploy-gh-pages
+  - ./scripts/travis-deploy.sh
 
 notifications:
   email:
