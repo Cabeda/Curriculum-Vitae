@@ -7,14 +7,14 @@ branches:
 
 before_script:
   - npm install -g angular-cli
-  - ./scripts/setup-github-access.sh
+  # - ./scripts/setup-github-access.sh
 
 script:
   - ng build --prod
 
 after_success:
-  - ./scripts/remove-branch.sh
-  - npm run deploy-gh-pages
+  # - ./scripts/remove-branch.sh
+  # - npm run deploy-gh-pages
 
 notifications:
   email:
