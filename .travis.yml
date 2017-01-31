@@ -15,7 +15,7 @@ script:
 
 after_success:
   # - ./scripts/remove-branch.sh
-  - ./scripts/.travis-deploy.sh
+  - bash ./scripts/.travis-deploy.sh
 
 notifications:
   email:
