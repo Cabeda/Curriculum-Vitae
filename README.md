@@ -2,7 +2,7 @@
 
 [![CI Status]
    (http://img.shields.io/travis/roamlrs/roamlrs.svg?style=flat)]
-   (https://travis-ci.org/roamlrs/roamlrs)
+   (https://travis-ci.org/Cabeda/Curriculum-Vitae.svg?branch=master)
    
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
 
