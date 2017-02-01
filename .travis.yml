@@ -26,6 +26,4 @@ after_success:
   - ./scripts/.travis-deploy.sh
 
 notifications:
-  email:
-    on_failure: change
-    on_success: change
+  slack: lhasau:wnj03GlXRvb8RWLuNBTlreju
