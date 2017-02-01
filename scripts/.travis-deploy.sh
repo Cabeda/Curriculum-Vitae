@@ -9,12 +9,26 @@ git config user.email "jecabeda@gmaill.com"
 
 # The first and only commit to this new Git repo contains all the
 # files present with the commit message "Deploy to GitHub Pages".
-git add .
-git commit -m "Deploy to GitHub Pages"
+# git add .
+# git commit -m "Deploy to GitHub Pages"
 
 # Force push from the current repo's master branch to the remote
 # repo's gh-pages branch. (All previous history on the gh-pages branch
 # will be lost, since we are overwriting it.) We redirect any output to
 # /dev/null to hide any sensitive credential data that might otherwise be exposed.
 # tokens GH_TOKEN and GH_REF will be provided as Travis CI environment variables
-git push --force -- quiet"https://${GH_TOKEN}@${GH_REF}" master:gh-pages > /dev/null 2>&1
+# git push --force "https://${GH_TOKEN}@github.com/Cabeda/Cabeda.github.io" master:gh-pages > /dev/null 2>&1
+git remote add upstream "https://${GH_TOKEN}@github.com/Cabeda/Cabeda.github.io"
+
+git fetch upstream
+git reset upstream/gh-pages
+
+echo "cabeda.github.io"
+
+touch .
+
+git add -A .
+git commit -m "rebuild pages"
+git push -q upstream HEAD:gh-pages
+
+
