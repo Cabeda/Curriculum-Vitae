@@ -7,12 +7,18 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
+import { ResumeComponent } from './resume/resume.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    ResumeComponent,
+    ProjectsComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,

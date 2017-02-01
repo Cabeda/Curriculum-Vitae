@@ -18,7 +18,7 @@ before_script:
 
 script:
   # - npm run test
-  - ng build --prod
+  - ng build -prod -aot
 
 after_success:
   # - ./scripts/remove-branch.sh
