@@ -18,7 +18,7 @@ git commit -m "Deploy to GitHub Pages"
 # /dev/null to hide any sensitive credential data that might otherwise be exposed.
 # tokens GH_TOKEN and GH_REF will be provided as Travis CI environment variables
 # git push --force "https://${GH_TOKEN}@github.com/Cabeda/Cabeda.github.io" master:gh-pages > /dev/null 2>&1
-git push --force "https://$GH_TOKEN@github.com/Cabeda/Cabeda.github.io"
+ git push --set-upstream --force "https://$GH_TOKEN@github.com/Cabeda/Cabeda.github.io" master
 
 # git fetch upstream
 # git reset upstream/gh-pages
