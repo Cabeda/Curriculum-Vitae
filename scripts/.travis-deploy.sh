@@ -18,7 +18,7 @@ git config user.email "jecabeda@gmaill.com"
 # /dev/null to hide any sensitive credential data that might otherwise be exposed.
 # tokens GH_TOKEN and GH_REF will be provided as Travis CI environment variables
 # git push --force "https://${GH_TOKEN}@github.com/Cabeda/Cabeda.github.io" master:gh-pages > /dev/null 2>&1
-git remote add upstream "https://${GH_TOKEN}@github.com/Cabeda/Cabeda.github.io"
+git remote add upstream "https://$GH_TOKEN@github.com/Cabeda/Cabeda.github.io"
 
 git fetch upstream
 git reset upstream/gh-pages
