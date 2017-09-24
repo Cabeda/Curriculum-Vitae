@@ -1,8 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 
   body {
-    background-color: black;
     overflow-x: hidden;
   }
 
-html,body{height:100%;margin:0;padding:0}
+html,body
+{
+  margin:0;
+  padding:0
+}
+
+.window {
+  height: 80vh;
+}
+
+a {
+  color: black;
+}
