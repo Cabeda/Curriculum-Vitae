@@ -1,7 +1,21 @@
 <div class="window">
-    <div class="row">
-      <div class="col subtitle">
-        <h1>My articles</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <h1>My Articles</h1>
+        </div>
+      </div>
+      <div class="row">
+          <div *ngFor="let item of articles" class="col">
+              <div class="card card-default card-inverse mx-auto" >
+                  <img class="card-img-top project-img" src="{{item.img}}" alt="Tic tac Toe ">
+                  <div class="card-block">
+                    <h4 class="card-title">{{item.title}}</h4>
+                    <p class="card-text">{{item.description}}</p>
+                    <a href="{{item.url}}" target="_blank" class="btn btn-primary">See pen</a>
+                  </div>
+                </div>
+          </div>
       </div>
     </div>
   </div>

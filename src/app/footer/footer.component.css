@@ -4,5 +4,10 @@ svg{
 }
 
 path, ellipse, circle {
-            fill: black;
+            fill: white;
         }
+
+.footer {
+    padding-top:  2%;
+    background-color: #212529;
+}

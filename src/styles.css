@@ -12,6 +12,19 @@ html,body
 
 .window {
   height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-img {
+  width: 20rem;
+  height: 10rem;
+}
+
+.card-default {
+  width: 20rem;
+  margin-bottom: 2%;
 }
 
 a {
