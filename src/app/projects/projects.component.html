@@ -1,18 +1,17 @@
-<div class="container">
-  <div class="row">
-    <div class="col text-center">
-      <h1>My Projects</h1>
-    </div>
+<div class="row">
+  <div class="col text-center">
+    <h1>My Projects</h1>
+    <a name="projects"></a>
   </div>
-  <div class="row">
-    <div *ngFor="let item of projects" class="col">
-      <div class="card card-default  mx-auto bg-dark">
-        <img class="card-img-top project-img" src="{{item.img}}" alt="Tic tac Toe ">
-        <div class="card-block">
-          <h4 class="card-title text-white">{{item.title}}</h4>
-          <p class="card-text text-white">{{item.description}}</p>
-          <a href="{{item.url}}" target="_blank" class="btn btn-primary">See pen</a>
-        </div>
+</div>
+<div class="card-columns">
+  <div *ngFor="let item of projects">
+    <div class="card card-default mx-auto bg-dark text-white">
+      <img class="card-img-top img-responsive " src="{{item.img}}" alt="{{item.title}} ">
+      <div class="card-body">
+        <h4 class="card-title ">{{item.title}}</h4>
+        <p class="card-text ">{{item.description}}</p>
+        <a href="{{item.url}}" target="_blank" class="btn btn-primary text-right">See pen</a>
       </div>
     </div>
   </div>
