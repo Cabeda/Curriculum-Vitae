@@ -20,10 +20,18 @@ script:
   # - npm run test
   - ng build -prod -aot
 
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master
+
 after_success:
   # - ./scripts/remove-branch.sh
-  - chmod ugo+x scripts/.travis-deploy.sh
-  - ./scripts/.travis-deploy.sh
+  
+  # - chmod ugo+x scripts/.travis-deploy.sh
+  # - ./scripts/.travis-deploy.sh
 
 notifications:
   slack: lhasau:vgGqEnPhI0K9CCSCzGrv7fZs
