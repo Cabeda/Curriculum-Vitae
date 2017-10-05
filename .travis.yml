@@ -26,4 +26,4 @@ after_success:
   - ./scripts/.travis-deploy.sh
 
 notifications:
-  slack: lhasau:wnj03GlXRvb8RWLuNBTlreju#jecabeda
+  slack: lhasau:vgGqEnPhI0K9CCSCzGrv7fZs
