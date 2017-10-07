@@ -13,8 +13,6 @@ branches:
     - master
 
 before_script:
-  # - npm install -g angular-cli
-  # - ./scripts/setup-github-access.sh
 
 script:
   # - npm run test
@@ -29,12 +27,6 @@ deploy:
   target_branch: master
   on:
     branch: master
-
-after_success:
-  # - ./scripts/remove-branch.sh
-  
-  # - chmod ugo+x scripts/.travis-deploy.sh
-  # - ./scripts/.travis-deploy.sh
 
 notifications:
   slack: lhasau:vgGqEnPhI0K9CCSCzGrv7fZs
