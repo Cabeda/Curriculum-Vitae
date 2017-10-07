@@ -24,3 +24,8 @@ html,body
 a {
   color: black;
 }
+
+.title-padding {
+  padding-bottom: 1em;
+  padding-top: 0.5em;
+}
