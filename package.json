@@ -24,12 +24,13 @@
     "@angular/router": "^4.4.3",
     "bootstrap": "^4.0.0-beta",
     "core-js": "^2.4.1",
+    "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
     "particle.js": "^1.0.7",
+    "popper.js": "^1.12.5",
     "rxjs": "^5.4.3",
     "tether": "^1.4.0",
-    "zone.js": "^0.8.17",
-    "popper.js": "^1.12.5"
+    "zone.js": "^0.8.17"
   },
   "devDependencies": {
     "@angular/cli": "^1.4.3",

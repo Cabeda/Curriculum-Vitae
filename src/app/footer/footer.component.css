@@ -1,14 +1,9 @@
-svg{
-    width: 30px;
-    height: 30px;
-}
-
-path, ellipse, circle {
-            fill: white;
-        }
-        
 .footer {
     padding-top:  2%;
     padding-bottom:  2%;
     background-color: #212529;
+}
+
+.white {
+    color: white;
 }
